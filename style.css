@@ -1,0 +1,78 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+    padding: 32px 24px;
+}
+h1 {
+    text-align: center;
+    color: #2d6cdf;
+}
+#game-area {
+    margin-bottom: 24px;
+}
+#question-area {
+    font-size: 1.3em;
+    margin-bottom: 16px;
+    min-height: 48px;
+}
+#choices-area button {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: 1px solid #2d6cdf;
+    background: #f4f8fb;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#choices-area button.correct {
+    background: #b7e4c7;
+    border-color: #38b000;
+}
+#choices-area button.wrong {
+    background: #ffb4a2;
+    border-color: #e63946;
+}
+#timer {
+    text-align: right;
+    font-size: 1.1em;
+    color: #e63946;
+    margin-bottom: 8px;
+}
+#result {
+    text-align: center;
+    font-size: 1.1em;
+    min-height: 24px;
+    margin-bottom: 8px;
+}
+#score-area {
+    text-align: center;
+    margin-top: 20px;
+}
+#next-btn, #restart-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 8px;
+    border: none;
+    background: #2d6cdf;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: background 0.2s;
+}
+#next-btn:hover, #restart-btn:hover {
+    background: #1b4fa0;
+}
