@@ -9,17 +9,26 @@
 <body>
     <div class="container">
         <h1>AI와 퀴즈 대결!</h1>
-        <div id="game-area">
+        <div id="nickname-area">
+            <input type="text" id="nickname-input" maxlength="12" placeholder="닉네임 입력" autofocus>
+            <button id="start-btn">게임 시작</button>
+        </div>
+        <div id="game-area" style="display:none;">
             <div id="question-area"></div>
-            <div id="choices-area"></div>
+            <div id="timer-bar-bg"><div id="timer-bar"></div></div>
             <div id="timer"></div>
+            <div id="choices-area"></div>
             <div id="result"></div>
             <button id="next-btn" style="display:none;">다음 문제</button>
         </div>
-        <div id="score-area">
+        <div id="score-area" style="display:none;">
             <h2>점수</h2>
-            <p>나: <span id="player-score">0</span>점</p>
+            <p><span id="nickname-label"></span>: <span id="player-score">0</span>점</p>
             <p>AI: <span id="ai-score">0</span>점</p>
+        </div>
+        <div id="leaderboard-area" style="display:none;">
+            <h2>🏆 랭킹판</h2>
+            <ol id="leaderboard-list"></ol>
         </div>
         <button id="restart-btn" style="display:none;">다시 시작</button>
     </div>
