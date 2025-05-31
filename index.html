@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI와 퀴즈 대결!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI와 퀴즈 대결!</h1>
+        <div id="game-area">
+            <div id="question-area"></div>
+            <div id="choices-area"></div>
+            <div id="timer"></div>
+            <div id="result"></div>
+            <button id="next-btn" style="display:none;">다음 문제</button>
+        </div>
+        <div id="score-area">
+            <h2>점수</h2>
+            <p>나: <span id="player-score">0</span>점</p>
+            <p>AI: <span id="ai-score">0</span>점</p>
+        </div>
+        <button id="restart-btn" style="display:none;">다시 시작</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
